@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+import challenges.Challenge;
+import challenges.ChallengeRegistry;
 
-public class Main {
+void main() {
+    int id = 2948;
+
+    Challenge challenge = ChallengeRegistry.get(id);
+    challenge.getSolutions();
 }

@@ -1,5 +1,5 @@
-package challenges;
+package challenges.testing;
 
-public interface Solvable<I, O> {
-    O solve(I input);
+public interface Solvable<O> {
+    O solve(Object[] input);
 }
