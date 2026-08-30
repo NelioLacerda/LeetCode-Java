@@ -14,6 +14,12 @@ public class TestRegistry {
                 new TestCase<>("case3", new Object[]{ new int[]{1,7,28,19,10}, 3 }, new int[]{1,7,28,19,10}),
                 new TestCase<>("case4", new Object[]{ new int[]{5,100,44,45,16,30,14,65,83,64}, 15 }, new int[]{5,100,14,16,30,44,45,64,83,65})
                 ));
+        REGISTRY.put(2091, List.of(
+                new TestCase<>("case1", new Object[]{ new int[]{2,10,7,5,4,1,8,6} }, 5),
+                new TestCase<>("case2", new Object[]{ new int[]{0,-4,19,1,8,-2,-3,5} }, 3),
+                new TestCase<>("case3", new Object[]{ new int[]{101} }, 1),
+                new TestCase<>("case4", new Object[]{ new int[]{-14,61,29,-18,59,13,-67,-16,55,-57,7,74} }, 6)
+        ));
     }
 
     public static List<TestCase<?>> get(int id) {

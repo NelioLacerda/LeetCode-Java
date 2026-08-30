@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 public class ChallengeTest {
     @TestFactory
     Stream<DynamicTest> runAllChallenges() {
-        String filter = System.getProperty("challenge"); //run -> Run configs -> add VM opntions in challange -> -Dchallenge=2948
+        String filter = "2091";
 
         return ChallengeRegistry.keys().stream()
                 .filter(id -> filter == null || filter.isBlank() || id.toString().equals(filter))

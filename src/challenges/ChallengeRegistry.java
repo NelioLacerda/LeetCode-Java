@@ -12,6 +12,7 @@ public class ChallengeRegistry {
 
     static {
         REGISTRY.put(2948, LexicographicallySmallestArray::new);
+        REGISTRY.put(2091, MinimumDeletions::new);
     }
 
     public static Challenge get(int id) {
